@@ -87,6 +87,7 @@ def reset():
 #         # sec = round(sec, 2)
 #         success = getFrame(sec)
 
+# Trying with git
 # code to extract individual images from video
 def extractIndividual(frames):
     # frame_count=int(vidcap.get(cv2.CAP_PROP_FRAME_COUNT))
