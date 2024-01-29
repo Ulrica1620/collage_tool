@@ -156,10 +156,12 @@ def extractCollage(collage):
             # reshape the frames into a grid
             if (collage == "2x2"):
                 grid_image = np.concatenate([np.concatenate(frame_list[i:i+2], axis=1) for i in range(0, 4, 2)], axis=0)
-            elif (collage == "3x3"):
-                grid_image = np.concatenate([np.concatenate(frame_list[i:i+3], axis=1) for i in range(0, 9, 3)], axis=0)
             elif (collage == "2x4"):
                 grid_image = np.concatenate([np.concatenate(frame_list[i:i+4], axis=1) for i in range(0, 8, 4)], axis=0)
+                
+            elif (collage == "3x3"):
+                grid_image = np.concatenate([np.concatenate(frame_list[i:i+3], axis=1) for i in range(0, 9, 3)], axis=0)
+            
             elif (collage == "4x2"):
                 grid_image = np.concatenate([np.concatenate(frame_list[i:i+2], axis=1) for i in range(0, 8, 2)], axis=0)
         break
